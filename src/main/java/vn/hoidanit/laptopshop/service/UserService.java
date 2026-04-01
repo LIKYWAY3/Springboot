@@ -9,14 +9,11 @@ import vn.hoidanit.laptopshop.repository.UserRepository;
 
 @Service
 public class UserService {
+    // DI
     private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
-    }
-
-    public String handleHello() {
-        return "Hello service";
     }
 
     public List<User> getAllUsers() {
